@@ -5,3 +5,11 @@ header{
 }
 
 /*Nav*/
+nav {
+    list-style-type: none;
+    
+    background-color:grey;
+}
+nav.li.a {
+ color:black;
+}
