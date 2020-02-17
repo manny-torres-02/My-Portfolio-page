@@ -11,11 +11,54 @@ header{
 }
 
 /*Nav*/
-nav {
-    list-style-type: none;
-    
-    background-color:#f3f;
+.Navbar {
+    display:flex;
+    background-color:#46ACC2;
+    padding:16px;
+    font-family: 'Montserrat', sans-serif;
 }
-nav.li.a {
- color:black;
+
+/* align navbar items horiz */ 
+.Navbar_Items {
+    display:flex;
+}
+
+/* style the padding */ 
+.Navbar_Link {
+    padding-right:10px;
+}
+
+/* right align part of the nav items */
+.Navbar_Items--right {
+margin-left:auto; 
+}
+
+/* Style the NAvbar menu icon
+dont want it to show normally on large screens  */
+.Navbar_Link-toggle {
+display:none
+}
+
+img{
+    display:none;
+}
+/*set the responsive media query to toggle when under 768 px*/
+@media only screen and (max-width:768px) {
+    .Navbar_Items, .Navbar {
+        flex-direction:column;
+    }
+    .Navbar_Items {
+        display:none;
+    }
+    .Navbar_Items--right {
+        margin-left:0;
+    }
+    /*Style the Menu Toggle bar
+     */ 
+    .Navbar_Link-toggle{
+        display:initial;
+        align-self: flex-end;
+        position:absolute;
+        cursor:pointer;
+    }
 }
