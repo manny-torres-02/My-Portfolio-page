@@ -56,9 +56,13 @@ img{
     /*Style the Menu Toggle bar
      */ 
     .Navbar_Link-toggle{
-        display:initial;
         align-self: flex-end;
+        display:initial;
         position:absolute;
         cursor:pointer;
+    }
+    /* this class related to in JS File. When Button is clicked the event listener will show the menu  */
+    .Navbar_ToggleShow {
+        display:flex;
     }
 }
